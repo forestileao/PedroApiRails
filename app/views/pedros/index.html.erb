@@ -1,2 +1,9 @@
-<h1>Pedros#index</h1>
-<p>Find me in app/views/pedros/index.html.erb</p>
+<h1>Pedros</h1>
+
+<ul>
+  <% @pedros.each do |pedro| %>
+    <li>
+      <%= pedro.name %>
+    </li>
+  <% end %>
+</ul>
